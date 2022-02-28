@@ -1,5 +1,23 @@
-
+html,
+body{
+  height: 100%;
+}
 
 body{
+  color: $title;
+  font-size: 24px;
+  @extend %opensans-400;
+}
 
+.title{
+  font-size: 60px;
+  line-height: 1;
+  @extend %opensans-700;
+  color: $title;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }

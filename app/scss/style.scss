@@ -3,7 +3,76 @@
 @import 'reset';
 @import 'global';
 
+.header-content{
+  margin-top: 40px;
+  // display: flex;
+  &__left{
+    display: inline-flex;
+    margin-right: 90px;
+    // width: 475px;
+    float: left;
+  }
+  &__left-text{
+    @extend %opensans-600;
+    font-size: 24px;
+    line-height: 31px;
+    color: $title;
+    margin-top: 15px;
+    max-width: 275px;
+  }
+  &__left-span{
+    display: block;
+    @extend %opensans-400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $title;
+    margin-top: 12px;
+    max-width: 210px;
+  }
+  &__right-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right-phone{
+    margin-top: 15px;
+    @extend %opensans-600;
+    font-size: 24px;
+    color: $title;
+  }
+  &__right-btn{
+    margin-top: 14px;
+    @extend %opensans-600;
+    font-size: 24px;
+    color: #fff;
+    padding: 12px 31px;
+    background-color: $accent;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+}
 
+.logo{
+  margin-right: 50px;
+}
 
+.menu{
+  &__list{
+    display: flex;
+    justify-content: space-between; 
+  }
+  &__list-link{
+    @extend %opensans-400;
+    font-size: 24px;
+    color: $title;
+    line-height: 30px;
+    transition: all .3s;
+  }
+  &__list-link:hover{
+    color: #272876;
+  }
+  &__list-link--active{
+    color: #272876;
+  }
+}
 
 @import 'media';

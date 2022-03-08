@@ -9,6 +9,10 @@ body{
   @extend %opensans-400;
 }
 
+main{
+  flex-grow: 1;
+}
+
 .title{
   font-size: 60px;
   line-height: 1;

@@ -57,3 +57,12 @@ $text: #000000;
   font-weight: 600;
   font-style: italic;
 }
+
+%btn{
+  @extend %opensans-600;
+  font-size: 24px;
+  color: #fff;
+  padding: 13px 27px;
+  background-color: $accent;
+  border-radius: 8px;
+}

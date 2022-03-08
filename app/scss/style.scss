@@ -5,11 +5,10 @@
 
 .header-content{
   margin-top: 40px;
-  // display: flex;
+  margin-bottom: 45px;
   &__left{
     display: inline-flex;
     margin-right: 90px;
-    // width: 475px;
     float: left;
   }
   &__left-text{
@@ -44,7 +43,7 @@
     @extend %opensans-600;
     font-size: 24px;
     color: #fff;
-    padding: 12px 31px;
+    padding: 13px 27px;
     background-color: $accent;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -70,9 +69,375 @@
   &__list-link:hover{
     color: #272876;
   }
-  &__list-link--active{
-    color: #272876;
+}
+
+.bg{
+  &__img{
+    width: 100%;
+    height: 840px;
+  }
+  &__title{
+    padding-top: 210px;
+    @extend %opensans-700;
+    font-size: 70px;
+    line-height: 75px;
+    color: #fff;
+    width: 590px;
+    margin-bottom: 35px;
+  }
+  &__text{
+    @extend %opensans-400;
+    font-size: 33px;
+    line-height: 45px;
+    color: #fff;
+    width: 490px;
+    margin-bottom: 50px;
+  }
+  &__btn{
+    padding: 13px 30px;
+    font-size: 24px;
+    @extend %opensans-400;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
   }
 }
+
+.services{
+  margin-top: 190px;
+  margin-bottom: 190px;
+  &__title{
+    text-align: center;
+    font-size: 60px;
+    @extend %opensans-700;
+    color: $title;
+    margin-bottom: 45px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+  }
+
+}
+.services-item{
+  width: 370px;
+  height: 420px;
+  box-shadow: 0px 3px 32px 0px rgba(0, 0, 0, 0.15);
+  transition: all .5s;
+  cursor: pointer;
+  &__text{
+    text-align: center;
+    font-size: 30px;
+    @extend %opensans-400;
+    color: #000000;
+    padding-top: 330px;
+  }
+}
+
+.services-item__one{
+  background-image: url('../images/services/1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/1-1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.services-item__two{
+  background-image: url('../images/services/2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/2-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.services-item__three{
+  background-image: url('../images/services/3.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/3-3.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.services-item__four{
+  background-image: url('../images/services/4.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/4-4.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.services-item__five{
+  background-image: url('../images/services/5.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/5-5.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.services-item__six{
+  background-image: url('../images/services/6.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+   &:hover{
+    transform: translateY(-10px);
+    background-image: url('../images/services/6-6.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+  }
+}
+
+.discount{
+  background-repeat: no-repeat;
+  background-position: 130px 0px;
+  height: 270px;
+  margin-bottom: 190px;
+  &__title{
+    @extend %opensans-700;
+    font-size: 40px;
+    text-align: center;
+  }
+  &__span{
+    @extend %opensans-400;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__form{
+    margin: 0 auto;
+    position: relative;
+    width: 550px;
+    margin-bottom: 20px;
+  }
+  &__form-input{
+    height: 60px;
+    width: 350px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding-left: 20px;
+    outline: none;
+    &::placeholder{
+      color: #161616;
+      @extend %opensans-400;
+      font-size: 20px;
+    }
+  }
+  &__form-btn{
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    background-color: $accent;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+  }
+  &__text{
+    width: 410px;
+    margin: 0 auto;
+    @extend %opensans-400;
+    font-size: 18px;
+    color: #161616;
+    line-height: 24px;
+    text-indent: 10px;
+    a{
+      text-decoration: underline;
+      color: #161616;
+    }
+  }
+}
+
+.benefits__title{
+  margin-bottom: 80px;
+  text-align: center;
+  @extend %opensans-700;
+  font-size: 60px;
+  color: $title;
+}
+
+.benefits-tabs{
+  &__top{
+    display: flex;
+    border-bottom: 6px solid #e0e0e0;
+    border-radius: 3px;
+  }
+  &__top-box--one{
+    background-image: url('../images/benefits/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 99px;
+    width: 295px;
+  }
+  &__top-box--two{
+    background-image: url('../images/benefits/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 295px;
+    height: 99px;
+  }
+  &__top-box--three{
+    background-image: url('../images/benefits/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 295px;
+    height: 99px;
+  }
+  &__top-box--four{
+    background-image: url('../images/benefits/4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 295px;
+    height: 99px;
+  }
+  &__top-box--one--active{
+    background-image: url('../images/benefits/1-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+   &__top-box--two--active{
+    background-image: url('../images/benefits/2-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+   &__top-box--three--active{
+    background-image: url('../images/benefits/3-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+   &__top-box--four--active{
+    background-image: url('../images/benefits/4-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__top-text{
+    margin-top: 25px;
+    text-align: center;
+    @extend %opensans-700;
+    font-size: 24px;
+    color: $title;
+    margin-bottom: 30px;
+  }
+  &__top-item--active{
+    position: relative;
+  }
+  &__top-item--active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 6px;
+    background-color: #272876;
+  }
+  &__content-item{
+    width: 1170px;
+    height: 370px;
+    display: none;
+  }
+  &__content-item--active{
+    display: block;
+  }
+  &__content-info{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+  }
+  &__content-text{
+    width: 670px;
+    @extend %opensans-400;
+    font-size: 24px;
+    line-height: 38px;
+    color: $title;
+  }
+  &__content-title{
+    font-size: 35px;
+    @extend %opensans-700;
+    color: $title;
+    margin-bottom: 25px;
+  }
+  &__content-img{
+    object-fit: contain;
+  }
+  &__content-text--fix{
+    width: 690px;
+  }
+}
+
+.footer{
+  height: 367px;
+  background-color: $default;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  &__left{
+    padding-top: 75px;
+    color: #fff;
+  }
+  &__left-text--one{
+    width: 275px;
+    font-size: 24px;
+    line-height: 31px;
+    @extend %opensans-600;
+    margin-bottom: 10px;
+  }
+  &__left-text--two{
+    width: 210px;
+    font-size: 16px;
+    line-height: 22px;
+    @extend %opensans-400;
+    margin-bottom: 90px;
+  }
+  &__right{
+    padding-top: 80px;
+  }
+  &__right-btn{
+    @extend %btn;
+    margin-bottom: 20px;
+  }
+  &__right-phone{
+    display: block;
+    margin-top: 22px;
+    color: #fff;
+    padding-left: 25px;
+    @extend %opensans-600;
+    font-size: 24px;
+  }
+  &__text{
+    color: #fff;
+    @extend %opensans-400;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
 
 @import 'media';

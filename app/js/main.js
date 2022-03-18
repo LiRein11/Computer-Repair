@@ -1,4 +1,6 @@
-$(function(){
+// const { on } = require("gulp");
+
+$(function () {
 
   $('.benefits-tabs__top-item').on('click', function (e) {
     e.preventDefault();
@@ -7,7 +9,6 @@ $(function(){
 
     $('.benefits-tabs__content-item').removeClass('benefits-tabs__content-item--active');
     $($(this).attr('href')).addClass('benefits-tabs__content-item--active');
-
   });
 
   $('.benefits-tabs__top-item--two').on('click', function (e) {
@@ -41,5 +42,72 @@ $(function(){
     $('.benefits-tabs__top-box--three ').removeClass('benefits-tabs__top-box--three--active');
     $('.benefits-tabs__top-box--one').addClass('benefits-tabs__top-box--one--active');
   });
+
+  // $(".reviews__items").each(function () {
+  //   let more = $(this).find(".reviews__button-show--one");
+  //   let hide = $(this).find(".reviews__item-hide");
+  //   hide.hide();
+  //   more.on('click', (function () {
+  //     hide.slideToggle();
+  //     more.text(more.text() == "Скрыть" ? "Показать ещё" : "Скрыть");
+  //   });
+  // });
+
+  $('.reviews__button-show--one').on('click', function () {
+    $('.reviews__button-show--one').toggleClass('active');
+    $('.reviews__item-hide').toggleClass('active');
+    $('.pagination').toggleClass('active');
+  });
+
+  $('.reviews__button-show--two').on('click', function () {
+    $('.reviews__button-show--two').toggleClass('active');
+    $('.reviews__comment-hide').toggleClass('active');
+    $('.pagination').toggleClass('active');
+  });
+
+  $('.review-form__input--active').on('click', function () {
+    $('.review__text').toggleClass('active');
+  });
+
+  // $(document).ready(function () {
+  //   $(".reviews__button-show--one").on('click', function () {
+  //     $(this).find(".reviews__item-hide").first().slideDown()
+  //   })
+  // });
+
+  // function readMore() {
+  //   const item = document.querySelectorAll('.reviews__item-hide');
+  //   const btn = document.querySelector('.reviews__button-show--one');
+
+  //   btn.addEventListener('click', function () {
+  //     if (item.style.display === 'none') {
+  //       btn.innerHTML = 'Показать ещё';
+  //       item.style.display = 'none';
+  //     } else {
+  //       btn.innerHTML = 'Свернуть';
+  //       item.style.display = 'block';
+  //     }
+  //   })
+  // }
+
+  // let coll = document.getElementsByClassName('reviews__button-show--one');
+  // let elements = document.getElementsByClassName('reviews__item-hide');
+  // for (let i = 0; i < coll.length; i++) {
+  //   coll[i].addEventListener('click', function(){
+  //     this.classList.toggle('active');
+  //     let elements = this.nextElementSibling;
+  //     if (elements.style.display){
+  //       elements.style.display = 'none';
+  //     } else{
+  //       elements.style.display = 'block';
+  //     }
+  //   })
+  // }
+
+  // $('.reviews__button-show--one')on('click'), function () {
+  //   $('.reviews__item-hide').slice(1).slideDown();
+  // });
+
+  // }
 
 });

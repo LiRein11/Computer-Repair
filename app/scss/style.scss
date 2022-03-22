@@ -698,7 +698,7 @@
 
 // ------------------------------------------ call
 
-.header{
+.header-call{
   margin-top: 45px;
   margin-bottom: 195px;
   &__content{
@@ -998,6 +998,193 @@
     }
   }
 }
+
+// --------------------------------------- internet-setup
+
+.internet{
+  margin-bottom: 145px;
+  .title{
+    text-align: start;
+    margin-bottom: 60px;
+  }
+  &__box{
+    display: flex;
+  }
+}
+
+.internet-content{
+  width: 580px;
+  &__text-title{
+    @extend %opensans-600;
+    font-size: 35px;
+    line-height: 48px;
+    color: $title;
+    margin-bottom: 45px;
+  }
+  &__service-text{
+    @extend %opensans-400;
+    font-size: 28px;
+    line-height: 35px;
+    color: $title;
+    max-width: 430px;
+    margin-bottom: 10px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      border: 5px solid transparent;
+      border-bottom: 8px solid #000;
+      bottom: 9px;
+      margin-left: 8px;
+    }
+  }
+  &__service-text--active{
+    &::after{
+      display: none;
+    }
+  }
+  &__price-text{
+    display: flex;
+    justify-content: start;
+    @extend %opensans-400;
+    font-size: 28px;
+    line-height: 35px;
+    color: $title;
+  }
+  &__box-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  &__item-box{
+    width: 420px;
+  }
+  &__service-title{
+    @extend %opensans-700;
+    font-size: 20px;
+    color: $title;
+  }
+  &__service-span{
+    @extend %opensans-400;
+    font-size: 20px;
+    color: $title;
+    padding-bottom: 40px;
+    width: 410px;
+    line-height: 30px;
+  }
+  &__item::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 580px;
+    background-color: #e0e0e0;
+    bottom: 0;
+    left: 0;
+  }
+  &__price-title{
+    @extend %opensans-700;
+    font-size: 20px;
+    color: $title;
+    position: relative;
+    padding-right: 20px;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/rubl.png');
+      width: 14px;
+      height: 15px;
+      top: 7px;
+      left: 63px;
+    }
+  }
+  &__list{
+    @extend %opensans-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $title;
+    margin: 30px 0 70px 26px !important;
+  }
+  &__list-text{
+    max-width: 545px;
+  }
+  &__text{
+    width: 525px;
+    @extend %opensans-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $title;
+    padding-top: 10px;
+    margin-bottom: 70px;
+  }
+}
+
+.internet-connection{
+  margin-left: 130px;
+  width: 470px;
+  height: 380px;
+  box-shadow: 0px 3px 32px 0px rgba(0, 0, 0, 0.15);
+  &__title{
+    text-align: center;
+    font-size: 35px;
+    @extend %opensans-700;
+    color: $title;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  &__input{
+    height: 60px;
+    width: 350px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding-left: 20px;
+    outline-color: #272876;
+    &::placeholder{
+      color: #161616;
+      @extend %opensans-400;
+      font-size: 20px;
+    }
+  }
+  &__input:focus::placeholder{
+    color: transparent;
+  }
+  &__btn{
+    margin-left: 135px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    background-color: $accent;
+    border: none;
+    border-radius: 6px;
+    right: 5px;
+    cursor: pointer;
+  }
+  &__text{
+    margin-bottom: 50px;
+    width: 410px;
+    margin: 0 auto;
+    @extend %opensans-400;
+    font-size: 18px;
+    color: #161616;
+    line-height: 24px;
+    text-indent: 10px;
+    a{
+      text-decoration: underline;
+      color: #161616;
+    }
+  }
+}
+
+
 
 
 

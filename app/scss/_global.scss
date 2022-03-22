@@ -66,3 +66,49 @@ main{
     border-color: #272876;
   } 
 }
+
+.top{
+  height: 100px;
+  background-color: #272876;
+  margin-bottom: 145px;
+}
+
+.breadcrumbs{
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 33.5px;
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+  }
+  &__item{
+    font-size: 24px;
+    @extend %opensans-400;
+    color: #fff;
+    padding-right: 70px;
+    position: relative;
+    max-width: 100%;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/angle-right.png');
+      width: 10px;
+      height: 17px;
+      top: 8px;
+      right: 30px;
+    }
+    &:last-child{
+      padding: 0;
+      color: #000000;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}

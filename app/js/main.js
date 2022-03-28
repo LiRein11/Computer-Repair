@@ -1,6 +1,15 @@
 // const { on } = require("gulp");
 
+// const { on } = require("gulp");
+
 $(function () {
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__btn-img').toggleClass('menu__btn-img--active');
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.header-content__left-box').toggleClass('header-content__left-box--active');
+    $('.header-content__right-btn').toggleClass('header-content__right-btn--active');
+  });
 
   $('.benefits-tabs__top-item').on('click', function (e) {
     e.preventDefault();

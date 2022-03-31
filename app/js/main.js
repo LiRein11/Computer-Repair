@@ -4,7 +4,7 @@
 
 $(function () {
 
-  $('.menu__btn').on('click', function(){
+  $('.menu__btn').on('click', function () {
     $('.menu__btn-img').toggleClass('menu__btn-img--active');
     $('.menu__list').toggleClass('menu__list--active');
     $('.header-content__left-box').toggleClass('header-content__left-box--active');
@@ -52,31 +52,63 @@ $(function () {
     $('.benefits-tabs__top-box--one').addClass('benefits-tabs__top-box--one--active');
   });
 
-  // $(".reviews__items").each(function () {
-  //   let more = $(this).find(".reviews__button-show--one");
-  //   let hide = $(this).find(".reviews__item-hide");
-  //   hide.hide();
-  //   more.on('click', (function () {
-  //     hide.slideToggle();
-  //     more.text(more.text() == "Скрыть" ? "Показать ещё" : "Скрыть");
-  //   });
-  // });
+  $('.benefits-tabs__top-item--two1').on('click', function (e) {
+      e.preventDefault();
+      $('.benefits-tabs__top-box--one1 ').removeClass('benefits-tabs__top-box--one1--active');
+      $('.benefits-tabs__top-box--four1').removeClass('benefits-tabs__top-box--four1--active');
+      $('.benefits-tabs__top-box--three1 ').removeClass('benefits-tabs__top-box--three1--active');
+      $('.benefits-tabs__top-box--two1').addClass('benefits-tabs__top-box--two1--active');
+    });
 
-  $('.reviews__button-show--one').on('click', function () {
-    $('.reviews__button-show--one').toggleClass('active');
-    $('.reviews__item-hide').toggleClass('active');
-    $('.pagination').toggleClass('active');
+  $('.benefits-tabs__top-item--three1').on('click', function (e) {
+    e.preventDefault();
+    $('.benefits-tabs__top-box--one1 ').removeClass('benefits-tabs__top-box--one1--active');
+    $('.benefits-tabs__top-box--four1').removeClass('benefits-tabs__top-box--four1--active');
+    $('.benefits-tabs__top-box--two1 ').removeClass('benefits-tabs__top-box--two1--active');
+    $('.benefits-tabs__top-box--three1').addClass('benefits-tabs__top-box--three1--active');
   });
 
-  $('.reviews__button-show--two').on('click', function () {
-    $('.reviews__button-show--two').toggleClass('active');
-    $('.reviews__comment-hide').toggleClass('active');
-    $('.pagination').toggleClass('active');
+  $('.benefits-tabs__top-item--four1').on('click', function (e) {
+    e.preventDefault();
+    $('.benefits-tabs__top-box--one1 ').removeClass('benefits-tabs__top-box--one1--active');
+    $('.benefits-tabs__top-box--two1').removeClass('benefits-tabs__top-box--two1--active');
+    $('.benefits-tabs__top-box--three1 ').removeClass('benefits-tabs__top-box--three1--active');
+    $('.benefits-tabs__top-box--four1').addClass('benefits-tabs__top-box--four1--active');
   });
 
-  $('.review-form__input--active').on('click', function () {
-    $('.review__text').toggleClass('active');
+  $('.benefits-tabs__top-item--one1').on('click', function (e) {
+    e.preventDefault();
+    $('.benefits-tabs__top-box--two1 ').removeClass('benefits-tabs__top-box--two1--active');
+    $('.benefits-tabs__top-box--four1').removeClass('benefits-tabs__top-box--four1--active');
+    $('.benefits-tabs__top-box--three1 ').removeClass('benefits-tabs__top-box--three1--active');
+    $('.benefits-tabs__top-box--one1').addClass('benefits-tabs__top-box--one1--active');
   });
+
+// $(".reviews__items").each(function () {
+//   let more = $(this).find(".reviews__button-show--one");
+//   let hide = $(this).find(".reviews__item-hide");
+//   hide.hide();
+//   more.on('click', (function () {
+//     hide.slideToggle();
+//     more.text(more.text() == "Скрыть" ? "Показать ещё" : "Скрыть");
+//   });
+// });
+
+$('.reviews__button-show--one').on('click', function () {
+  $('.reviews__button-show--one').toggleClass('active');
+  $('.reviews__item-hide').toggleClass('active');
+  $('.pagination').toggleClass('active');
+});
+
+$('.reviews__button-show--two').on('click', function () {
+  $('.reviews__button-show--two').toggleClass('active');
+  $('.reviews__comment-hide').toggleClass('active');
+  $('.pagination').toggleClass('active');
+});
+
+$('.review-form__input--active').on('click', function () {
+  $('.review__text').toggleClass('active');
+});
 
   // $(document).ready(function () {
   //   $(".reviews__button-show--one").on('click', function () {

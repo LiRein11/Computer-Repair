@@ -7,6 +7,11 @@
   .discount {
     background-image: none !important;
   }
+  .reviews{
+    &__item-fix{
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1400px) {
@@ -41,6 +46,8 @@
     }
   }
   .services {
+    margin-top: 130px;
+    margin-bottom: 130px;
     &__items {
       grid-column-gap: 25px;
     }
@@ -50,6 +57,23 @@
       margin-left: 50px;
     }
   }
+  .discount{
+    margin-bottom: 130px;
+  }
+  .benefits{
+    margin-bottom: 130px;
+  }
+  .benefits-tabs{
+    &__top{
+      margin: 0 auto;
+    }
+    &__content{
+      margin: 0 auto;
+    }
+  }
+  .problems{
+    margin-bottom: 130px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -58,9 +82,16 @@
       padding-top: 60px;
     }
   }
+  .services{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .problems {
+    margin-bottom: 120px;
+  }
   .services-item {
     height: 400px;
-    width: 335px;
+    width: 100%;
     &__text {
       padding-top: 300px;
     }
@@ -180,9 +211,24 @@
       margin-top: 22px; 
     }
   }
+  .bg {
+    &__img {
+      height: 515px;
+    }
+  }
+  .discount {
+    margin-bottom: 120px;
+  }
+  .benefits {
+    margin-bottom: 120px;
+  }
 }
 
 @media (max-width: 1100px) {
+  .services{
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
   .header-content {
     margin-top: 20px;
     &__left-box {
@@ -271,7 +317,7 @@
       &__list {
         position: absolute;
         transform: translateY(-200%);
-        top: 250px;
+        top: 195px;
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -279,6 +325,7 @@
         left: 0;
         z-index: 5;
         transition: all 0.3s;
+        background-color: #fff;
         &.menu__list--active {
           transition: all 0.3s;
           transform: translateY(0%);
@@ -286,15 +333,17 @@
       }
       &__list-link {
         font-size: 31px;
+        padding-top: 0;
       }
       &__list-item {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+        margin-top: 50px;
       }
     }
   }
   .services-item {
     height: 370px;
-    width: 300px;
+    width: 100%;
     &__text {
       padding-top: 250px;
     }
@@ -327,17 +376,33 @@
       width: 500px;
     }
   }
+  .bg {
+    &__img {
+      height: 475px;
+    }
+  }
+  .discount {
+    margin-bottom: 110px;
+  }
+  .benefits {
+    margin-bottom: 110px;
+  }
+  .problems {
+    margin-bottom: 110px;
+  }
 }
 
 @media (max-width: 1000px) {
   .services {
+    margin-top: 100px;
+    margin-bottom: 100px;
     &__title {
       font-size: 40px;
     }
   }
   .services-item {
     height: 350px;
-    width: 270px;
+    width: 100%;
     &__text {
       padding-top: 235px;
       font-size: 27px;
@@ -349,6 +414,7 @@
     }
   }
   .benefits {
+    margin-bottom: 100px;
     &__title {
       font-size: 42px;
       margin-bottom: 60px;
@@ -438,6 +504,7 @@
     }
   }
   .problems{
+    margin-bottom: 100px;
     &__title{
       font-size: 35px;
     }
@@ -492,12 +559,24 @@
       text-align: center;
     }
   }
+  .bg {
+    &__img {
+      height: 430px;
+    }
+  }
+  .discount {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 900px) {
+  .services{
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
   .services-item {
     height: 330px;
-    width: 238px;
+    width: 100%;
     &__text {
       padding-top: 220px;
     }
@@ -552,6 +631,7 @@
     }
   }
   .problems{
+    margin-bottom: 90px;
     &__item{
       padding: 10px 0;
       font-size: 16px;
@@ -595,12 +675,27 @@
       margin-top: 22px; 
     }
   }
+  .bg {
+    &__img {
+      height: 387px;
+    }
+  }
+  .discount {
+    margin-bottom: 90px;
+  }
+  .benefits {
+    margin-bottom: 90px;
+  }
 }
 
 @media (max-width: 800px) {
+  .services{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
   .services-item {
     height: 315px;
-    width: 220px;
+    width: 100%;
     &__text {
       padding-top: 210px;
     }
@@ -638,12 +733,28 @@
       width: 180px;
     }
   }
+  .bg{
+    &__img {
+      height: 350px;
+    }
+  }
+  .discount {
+    margin-bottom: 80px;
+  }
+  .benefits {
+    margin-bottom: 80px;
+  }
+  .problems {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 768px) {
   .bg {
     &__img {
       background-image: url("../images/bg-active.jpg") !important;
+      width: 100%;
+      height: 465px;
     }
     &__title {
       padding-top: 110px;
@@ -661,9 +772,8 @@
     }
   }
   .discount {
-    background-image: url("../images/discount-bg-active.jpg") !important;
-    background-repeat: no-repeat;
-    background-position: 60px 30px;
+    margin-bottom: 70px;
+    height: 200px;
     &__title {
       font-size: 22px;
     }
@@ -696,6 +806,8 @@
     }
   }
   .services {
+    margin-top: 70px;
+    margin-bottom: 70px;
     &__title {
       font-size: 32px;
     }
@@ -708,7 +820,7 @@
   }
   .services-item {
     height: 225px;
-    width: 195px;
+    width: 100%;
     &__text {
       padding-top: 170px;
       font-size: 16px;
@@ -781,6 +893,7 @@
     }
   }
   .benefits{
+    margin-bottom: 70px;
     &__title{
       font-size: 32px;
       margin-bottom: 40px;
@@ -947,6 +1060,7 @@
     }
   }
   .problems{
+    margin-bottom: 70px;
     &__items{
       grid-column-gap: 15px;
       grid-row-gap: 12px;
@@ -973,7 +1087,7 @@
     }
   }
   .contacts-content{
-    width: 620px;
+    width: auto;
     margin: 0 auto;
     &__info{
       margin-left: 0;
@@ -1052,5 +1166,418 @@
       text-align: center;
       margin-top: 15px; 
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .bg{
+    &__title{
+      padding-top: 60px;
+    }
+    &__img{
+      height: 425px;
+    }
+  }
+  .services{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    &__items{
+      margin-left: 15px;
+      margin-right: 25px;
+    }
+  }
+  .services-item{
+    height: 195px;
+    width: 100%;
+    &__text{
+      padding-top: 135px;
+    }
+  }
+  .discount {
+    margin-bottom: 60px;
+    &__form{
+      width: 285px;
+    }
+  }
+  .benefits {
+    margin-bottom: 60px;
+  }
+  .benefits-tabs{
+    &__top{
+      width: 520px;
+    }
+    &__content{
+      width: 520px;
+    }
+    &__content-item{
+      width: 520px;
+    }
+    &__top-box--one{
+      width: 130px;
+    }
+    &__top-box--two{
+      width: 130px;
+    }
+    &__top-box--three{
+      width: 130px;
+    }
+    &__top-box--four{
+      width: 130px;
+    }
+  }
+  .reviews{
+    &__comment{
+      flex-wrap: wrap;
+    }
+    &__comments{
+      width: auto;
+    }
+    &__comment-text{
+      text-align: center;
+      width: auto;
+      margin: 10px 20px 0;
+    }
+    &__comment-name{
+      display: flex;
+      justify-content: center;
+    }
+    &__comment-link{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &__comment-img{
+      width: auto;
+      height: auto;
+      margin-bottom: 10px;
+      margin-top: 0;
+      margin-right: 0;
+    }
+  }
+  .problems{
+    margin-bottom: 60px;
+    &__items{
+      width: 100%;
+    }
+  }
+  .footer-content{
+    width: auto;
+    &__text{
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .bg {
+    &__title {
+      padding-top: 30px;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    &__img {
+      height: 358px;
+    }
+  }
+  .services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__items {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  .services-item {
+    height: 165px;
+    width: 100%;
+    &__text {
+      padding-top: 115px;
+      font-size: 15px;
+    }
+  }
+  .benefits-tabs {
+    &__top {
+      width: 460px;
+    }
+    &__content {
+      width: 460px;
+    }
+    &__content-item {
+      width: 460px;
+      height: 160px;
+    }
+    &__top-box--one {
+      width: 115px;
+    }
+    &__top-box--two {
+      width: 115px;
+    }
+    &__top-box--three {
+      width: 115px;
+    }
+    &__top-box--four {
+      width: 115px;
+    }
+    &__content-info{
+      padding-top: 20px;
+    }
+  }
+  .problems {
+     margin-bottom: 50px;
+  }
+  .contacts-content{
+    flex-direction: column;
+    &__feedback{
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    &__info{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .header-content{
+    &__right-phone{
+      margin-top: 50px;
+    }
+  }
+  .bg{
+    &__title{
+      font-size: 28px;
+      line-height: 38px;
+      padding-top: 20px;
+      margin-left: 15px;
+    }
+    &__text{
+      font-size: 14px;
+      margin-left: 15px;
+    }
+    &__btn{
+      margin-left: 15px;
+    }
+    &__img{
+      height: 300px;
+    }
+  }
+  .services{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }  
+  .services-item{
+    width: 100%;
+  }
+  .benefits-tabs {
+    &__top {
+      width: 360px;
+    }
+    &__content {
+      width: 360px;
+    }
+    &__content-text{
+      width: 200px;
+      padding-left: 15px;
+      font-size: 12px;
+      margin-right: 30px;
+    }
+    &__content-item {
+      width: 360px;
+      height: 200px;
+    }
+    &__content-img--active1{
+      padding-left: 25px;
+    }
+    &__content-title{
+      margin-bottom: 5px;
+      padding-left: 15px;
+      font-size: 17px;
+    }
+    &__top-box--one {
+      width: 90px;
+    }
+    &__top-box--two {
+      width: 90px;
+    }
+    &__top-box--three {
+      width: 90px;
+    }
+    &__top-box--four {
+      width: 90px;
+    }
+    &__content-info {
+      padding-top: 20px;
+    }
+  }
+  .reviews{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item-fix{
+      display: block;
+    }
+  }
+  .problems{
+    margin-bottom: 40px;
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  .contacts-content{
+    &__info{
+      text-align: start;
+      position: relative;
+    }
+    &__info::before{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+      height: 178px;
+      background-image: url("../images/icons/icons.jpg");
+    }
+    &__feedback{
+      padding: 30px;
+      width: 280px;
+      height: 240px;
+    }
+    &__feedback-text{
+      width: 200px;
+    }
+    &__feedback-btn{
+      display: block;
+      right: 0;
+      position: relative;
+      margin: 10px auto;
+    }
+    &__feedback-form{
+      margin-bottom: 0;
+    }
+    &__feedback-input{
+      width: 220px;
+    }
+  } 
+}
+
+@media (max-width: 440px){
+  .footer {
+    height: 330px;
+  }
+  .footer-content {
+      display: block;
+      &__left {
+        padding-top: 55px;
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+      &__left-text--one{
+        margin: 0 auto 10px;
+      }
+      &__left-text--two {
+        margin-bottom: 0;
+        margin: 0 auto;
+      }
+      &__right {
+        margin: 25px auto 20px;
+        padding: 0;
+        text-align: center;
+      }
+      &__text {
+        width: 180px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+}
+
+@media (max-width: 400px){
+  .container{
+    padding: 0 13px;
+  }
+  .bg {
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 15px;
+      margin-left: 0px;
+      margin-bottom: 5px;
+      width: 290px;
+    }
+    &__text {
+      font-size: 12px;
+      margin-left: 0px;
+      margin-bottom: 5px;
+    }
+    &__btn {
+      margin-left: 0px;
+      padding: 5px 10px;
+    }
+    &__img {
+      height: 235px;
+    }
+  }
+  .services {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .benefits-tabs {
+    &__top {
+      width: 285px;
+    }
+    &__content {
+      width: 285px;
+    }
+    &__content-text {
+      width: 160px;
+      padding-left: 15px;
+      font-size: 11px;
+      margin-right: 30px;
+    }
+    &__content-item {
+      width: 285px;
+      height: 200px;
+    }
+    &__content-img--active1 {
+      padding-left: 10px;
+    }
+    &__content-title {
+      margin-bottom: 5px;
+      padding-left: 15px;
+      font-size: 16px;
+    }
+    &__top-text{
+      font-size: 11px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__top-box--one {
+      width: 70px;
+    }
+    &__top-box--two {
+      width: 70px;
+    }
+    &__top-box--three {
+      width: 70px;
+    }
+    &__top-box--four {
+      width: 70px;
+    }
+    &__content-info {
+      padding-top: 10px;
+    }
+  }
+  .problems {
+    margin-bottom: 30px;
   }
 }

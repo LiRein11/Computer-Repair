@@ -503,8 +503,10 @@
     position: absolute;
     width: 40px;
     height: 45px;
-    left: 167px;
-    top: 126px;
+    left: 0;
+    top: 25%;
+    right: 0;
+    margin: auto;
     background-image: url("../images/reviews/play.png");
   }
   &__item-title {

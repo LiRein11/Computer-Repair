@@ -1,0 +1,114 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  color: $title;
+  font-size: 24px;
+  @extend %opensans-400;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.title{
+  font-size: 60px;
+  line-height: 1;
+  @extend %opensans-700;
+  color: $title;
+  text-align: center;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 50px;
+  margin-bottom: 20px;
+  display: none;
+  transition: all .3s;
+  &.active{
+    display: flex;
+  }
+  &__prev{
+  margin-right: 20px;
+  }
+  &__next{
+  margin-left: 20px;
+  }
+  &__item{
+    display: inline;
+  }
+  &__item + .pagination__item{
+    margin-left: 10px;
+  }
+  &__link{
+    transition: all .10s;
+    padding: 8px 17px;
+    border: 2px solid #e1e1e1;
+    border-radius: 7px;
+    @extend %opensans-400;
+    font-size: 22px;
+    color: $title;
+  }
+  &__link--active{
+    background-color: #272876;
+    color: #fff;
+    border-color: #272876;
+  } 
+}
+
+.top{
+  height: 100px;
+  background-color: #272876;
+  margin-bottom: 145px;
+}
+
+.breadcrumbs{
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 33.5px;
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+  }
+  &__item{
+    font-size: 24px;
+    @extend %opensans-400;
+    color: #fff;
+    padding-right: 70px;
+    position: relative;
+    max-width: 100%;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/angle-right.png');
+      width: 10px;
+      height: 17px;
+      top: 8px;
+      right: 30px;
+    }
+    &:last-child{
+      padding: 0;
+      color: #000000;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}

@@ -1,0 +1,70 @@
+$accent: #0ab0b5;
+$default: #251d70;
+$title: #161616;
+$text: #000000;
+
+%opensans-700{
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+}
+
+%opensansi-700{
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+  font-style: italic;
+}
+
+%opensans-800{
+  font-family: 'OpenSans-Extra-bold';
+  font-weight: 800;
+}
+
+%opensansi-800{
+  font-family: 'OpenSans-Extra-bold';
+  font-weight: 800;
+  font-style: italic;
+}
+
+%opensans-300{
+  font-family: 'OpenSans-Light';
+  font-weight: 300;
+}
+
+%opensansi-300{
+  font-family: 'OpenSans-Light';
+  font-weight: 300;
+  font-style: italic;
+}
+
+%opensans-400{
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+}
+
+%opensansi-400{
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  font-style: italic;
+}
+
+%opensans-600{
+  font-family: 'OpenSans-Semi-bold';
+  font-weight: 600;
+}
+
+%opensansi-600{
+  font-family: 'OpenSans-Semi-bold';
+  font-weight: 600;
+  font-style: italic;
+}
+
+%btn{
+  @extend %opensans-600;
+  font-size: 24px;
+  color: #fff;
+  padding: 13px 27px;
+  background-color: $accent;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
